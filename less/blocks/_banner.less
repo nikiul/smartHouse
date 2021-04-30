@@ -1,0 +1,116 @@
+.banner {
+    margin-top: 70px;
+    padding-bottom: 150px;
+}
+
+.banner__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner__left {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1230px) {
+        width: auto;
+    }
+}
+
+.banner__title {
+    margin: 0;
+    margin-bottom: 48px;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 130%;
+
+    span {
+        color: #36A2F4;
+    }
+}
+
+.banner__desc {
+    margin: 0;
+    margin-bottom: 56px;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.banner__btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn__desc {
+    margin: 0;
+    font-size: 18px;
+    line-height: 170%;
+}
+
+.banner__right {
+    width: 38%;       
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-radius: 0px 0px 0px 165px;
+        background: #E3E7EA;
+        width: 977px;
+        height: 1106px;
+        z-index: -1;
+        top: -65%;
+        right: -87%;
+
+        @media (max-width: 1300px) {
+            width: 943px;
+        }
+
+        @media (max-width: 1250px) {
+            width: 900px;
+            height: 1000px;
+        }
+
+        @media (max-width: 1207px) {
+            width: 870px;
+        }
+
+        @media (max-width: 1175px) {
+            width: 845px;
+        }
+
+        @media (max-width: 1150px) {
+            width: 830px;
+        }
+
+        @media (max-width: 1115px) {
+            width: 815px;
+        }
+
+        @media (max-width: 1090px) {
+            width: 805px;
+        }
+
+        @media (max-width: 1080px) {
+            width: 790px;
+        }
+
+        @media (max-width: 1061px) {
+            width: 740px;
+        }
+
+        @media (max-width: 1016px) {
+            width: 705px;
+        }
+
+        @media (max-width: 990px) {
+            width: 685px;
+        }
+    }
+}
