@@ -34,14 +34,26 @@ if(listItem) {
 $('.owl-carousel').owlCarousel({
     center: true,
     stagePadding: 200,
-    items:3,
+    // items:3,
     loop:true,
     nav:true,
     pagination: true,
     margin:30,
     responsive:{
         0:{
-            items:2
+            items:1,
+            stagePadding: 0
+        },
+        1219: {
+            items:2,
+            stagePadding: 0,
+            center: false
+        },
+        1800: {
+            items:2,
+            stagePadding: 200,
+            center: true
         }
+
     }
 })

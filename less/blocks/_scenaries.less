@@ -6,34 +6,91 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 786px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }   
 
 .scenaries__title {
     margin-bottom: 80px;
+
+    @media (max-width: 500px) {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
 }
 
 .scenaries__item {
-    // width: auto;
-    // height: 500px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-image: url('../img/scenaries-item1.png');
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: contain;
+
+    @media (max-width: 640px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+.scenaries__item-img {
+
+    @media (max-width: 875px) {
+        margin-bottom: 16px;
+    }
+
+    @media (max-width: 500px) {
+        display: none !important;
+    }
+}
+
+.scenaries__item-img--mobile {
+    display: none !important;
+
+    @media (max-width: 500px) {
+        margin-bottom: 16px;
+        display: block !important;
+    }
 }
 
 .scenaries__desc {
     position: absolute;
     left: 10%;
     bottom: 11%;
+
+    @media (max-width: 1400px) {
+        left: 2%;
+    }
+
+    @media (max-width: 1219px) {
+        left: 20%;
+    }
+
+    @media (max-width: 875px) {
+        left: 10%;
+    }
+
+    @media (max-width: 705px) {
+        left: 3%;
+    }
+
+    @media (max-width: 640px) {
+        position: static;
+    }
 }
 
 .scenaries__subtitle {
     margin-bottom: 8px;
     color: #F0F2F4;
+
+    @media (max-width: 640px) {
+        color: #101315;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 18px;
+    }
 }
 
 .scenaries__text {
@@ -41,6 +98,14 @@
     font-size: 18px;
     line-height: 150%;
     color: #F0F2F4;
+
+    @media (max-width: 640px) {
+        color: #101315;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 14px;
+    }
 }
 
 .scenaries .owl-theme .owl-nav {
@@ -49,6 +114,14 @@
 
 .scenaries .owl-theme .owl-dots {
     margin-top: 40px;
+
+    @media (max-width: 640px) {
+        margin-top: 20px;
+    }
+
+    @media (max-width: 500px) {
+        margin-top: 0;
+    }
 }
 
 .scenaries .owl-theme .owl-dots .owl-dot span {
