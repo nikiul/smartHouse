@@ -300,6 +300,40 @@
     }
 }
 
+.banner__modal-btn {
+    display: none;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 18px;
+        top: 12px;
+    }
+}
+
+.modal-btn__icon {
+    position: relative;
+    width: 25px;
+    height: 2px;
+    transform:rotate(45deg);
+    background-color: #101315;
+    border-radius: 5px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        transform:rotate(-90deg);
+        background-color: #101315;
+        border-radius: 5px;
+    }
+}
+
 .banner__modal-title {
     margin-bottom: 24px;
     text-align: center;

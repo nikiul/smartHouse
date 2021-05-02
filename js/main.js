@@ -33,11 +33,16 @@ if(listItem) {
 // модалка
 const bannerModal = document.querySelector(".banner__modal-wrap");
 const btnBanner = document.querySelector(".btn__banner");
+const modalBtn = document.querySelector(".banner__modal-btn");
 
 btnBanner.onclick = function(){
-    
     bannerModal.style.display = "block";
     bodyLock.classList.add('body__lock');
+}
+
+modalBtn.onclick = function(){
+    bannerModal.style.display = "none";
+    bodyLock.classList.remove('body__lock');
 }
 
 window.onclick = function(event) {
