@@ -983,7 +983,7 @@ img {
   -moz-appearance: none;
   appearance: none;
 }
-.banner__modal-form input:last-child {
+.banner__modal-form button {
   width: 273px;
   margin-left: auto;
   margin-right: auto;
@@ -998,15 +998,17 @@ img {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
+  border: none;
+  outline: none;
 }
-.banner__modal-form input:last-child:hover {
+.banner__modal-form button:hover {
   background: #4DB0FB;
 }
-.banner__modal-form input:last-child:active {
+.banner__modal-form button:active {
   background: #238FE1;
 }
 @media (max-width: 500px) {
-  .banner__modal-form input:last-child {
+  .banner__modal-form button {
     padding: 20px 33px;
     width: 100%;
   }
