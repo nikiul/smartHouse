@@ -205,6 +205,11 @@
         width: 100%;
     }
 
+    @media (max-width: 750px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     @media (max-width: 500px) {
         margin-bottom: 30px;
     }
@@ -221,6 +226,10 @@
     img {
         @media (max-width: 840px) {
             border-radius: 0px 30px 30px 0;
+        }
+
+        @media (max-width: 750px) {
+            border-radius: 0;
         }
 
         &:first-child {

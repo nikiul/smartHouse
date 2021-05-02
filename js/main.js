@@ -28,6 +28,23 @@ if(listItem) {
         }
             
     }
+};
+
+// модалка
+const bannerModal = document.querySelector(".banner__modal-wrap");
+const btnBanner = document.querySelector(".btn__banner");
+
+btnBanner.onclick = function(){
+    
+    bannerModal.style.display = "block";
+    bodyLock.classList.add('body__lock');
+}
+
+window.onclick = function(event) {
+    if (event.target == bannerModal) {
+        bannerModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+    }
 }
 
 // карусель
@@ -56,4 +73,14 @@ $('.owl-carousel').owlCarousel({
         }
 
     }
-})
+});
+
+// фиксируем шапку
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
