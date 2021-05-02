@@ -81,11 +81,20 @@ $('.owl-carousel').owlCarousel({
 });
 
 // фиксируем шапку
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){
-        $('header').addClass("sticky");
-    }
-    else{
-        $('header').removeClass("sticky");
-    }
-});
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() > 1){
+//         $('header').addClass("sticky");
+//     }
+//     else{
+//         $('header').removeClass("sticky");
+//     }
+// });
+
+// $(window).scroll(function() {
+//     if ($(this).width() < 1063){
+//         $('header').remove("sticky");
+//     }
+//     // else{
+//     //     $('header').removeClass("sticky");
+//     // }
+// });
