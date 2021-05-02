@@ -1173,7 +1173,7 @@ img {
 @media (max-width: 500px) {
   .manages__item {
     margin-bottom: 30px;
-    width: 55%;
+    width: 75%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
