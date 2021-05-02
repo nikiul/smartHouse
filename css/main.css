@@ -1038,6 +1038,11 @@ img {
     margin-bottom: 200px;
   }
 }
+@media (max-width: 500px) {
+  .manages {
+    margin-bottom: 80px;
+  }
+}
 .manages__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,6 +1072,11 @@ img {
 .manages__title--tablet br {
   display: none;
 }
+@media (max-width: 500px) {
+  .manages__title--tablet br {
+    display: block;
+  }
+}
 @media (max-width: 840px) {
   .manages__title--tablet {
     margin-bottom: 40px;
@@ -1074,6 +1084,18 @@ img {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 630px) {
+  .manages__title--tablet {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .manages__title--tablet {
+    padding-left: 15px;
+    margin-bottom: 30px;
+    margin-left: 0;
   }
 }
 @media (max-width: 840px) {
@@ -1100,6 +1122,19 @@ img {
     width: 100%;
     bottom: -100px;
     z-index: -1;
+  }
+}
+@media (max-width: 840px) and (max-width: 500px) {
+  .manages__left::before {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .manages__left {
+    padding-left: 15px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 .manages__title {
@@ -1135,12 +1170,28 @@ img {
     width: 45%;
   }
 }
+@media (max-width: 500px) {
+  .manages__item {
+    margin-bottom: 30px;
+    width: 55%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 .manages__item-img {
   margin-bottom: 24px;
 }
 @media (max-width: 840px) {
   .manages__item-img {
     margin-bottom: 19px;
+  }
+}
+@media (max-width: 500px) {
+  .manages__item-img {
+    margin-bottom: 12px;
+    width: 60px;
+    height: 60px;
   }
 }
 .manages__subtitle {
@@ -1212,6 +1263,11 @@ img {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .manages__right {
+    margin-bottom: 30px;
+  }
+}
 .manages__img-wrap {
   margin-bottom: 171px;
   position: -webkit- -webkit-sticky;
@@ -1225,6 +1281,19 @@ img {
 @media (max-width: 840px) {
   .manages__img-wrap img {
     border-radius: 0px 30px 30px 0;
+  }
+}
+@media (max-width: 750px) {
+  .manages__img-wrap img:first-child {
+    display: none;
+  }
+}
+.manages__img-wrap img:last-child {
+  display: none;
+}
+@media (max-width: 750px) {
+  .manages__img-wrap img:last-child {
+    display: block;
   }
 }
 @media (max-width: 840px) {
