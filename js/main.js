@@ -49,6 +49,18 @@ window.onclick = function(event) {
     if (event.target == bannerModal) {
         bannerModal.style.display = "none";
         bodyLock.classList.remove('body__lock');
+    } else if (event.target == costModal) {
+        costModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+
+    } else if (event.target == footerCostModal) {
+        footerCostModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+
+    } else if (event.target == footerCallModal) {
+        footerCallModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+
     }
 }
 
@@ -67,12 +79,12 @@ modalBtnCost.onclick = function(){
     bodyLock.classList.remove('body__lock');
 }
 
-window.onclick = function(event) {
-    if (event.target == costModal) {
-        costModal.style.display = "none";
-        bodyLock.classList.remove('body__lock');
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == costModal) {
+//         costModal.style.display = "none";
+//         bodyLock.classList.remove('body__lock');
+//     }
+// }
 
 // модалка footer cost
 const footerCostModal = document.querySelector(".footer__cost-modal-wrap");
@@ -89,12 +101,12 @@ modalBtnCostFooter.onclick = function(){
     bodyLock.classList.remove('body__lock');
 }
 
-window.onclick = function(event) {
-    if (event.target == footerCostModal) {
-        footerCostModal.style.display = "none";
-        bodyLock.classList.remove('body__lock');
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == footerCostModal) {
+//         footerCostModal.style.display = "none";
+//         bodyLock.classList.remove('body__lock');
+//     }
+// }
 
 // модалка footer call
 const footerCallModal = document.querySelector(".footer__call-modal-wrap");
@@ -111,12 +123,12 @@ modalBtnCallFooter.onclick = function(){
     bodyLock.classList.remove('body__lock');
 }
 
-window.onclick = function(event) {
-    if (event.target == footerCallModal) {
-        footerCallModal.style.display = "none";
-        bodyLock.classList.remove('body__lock');
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == footerCallModal) {
+//         footerCallModal.style.display = "none";
+//         bodyLock.classList.remove('body__lock');
+//     }
+// }
 
 // карусель
 $('.owl-carousel').owlCarousel({
