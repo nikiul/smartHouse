@@ -30,7 +30,7 @@ if(listItem) {
     }
 };
 
-// модалка
+// модалка banner
 const bannerModal = document.querySelector(".banner__modal-wrap");
 const btnBanner = document.querySelector(".btn__banner");
 const modalBtn = document.querySelector(".banner__modal-btn");
@@ -48,6 +48,72 @@ modalBtn.onclick = function(){
 window.onclick = function(event) {
     if (event.target == bannerModal) {
         bannerModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+    }
+}
+
+// модалка cost
+const costModal = document.querySelector(".cost__modal-wrap");
+const btnCost = document.querySelector(".btn__cost");
+const modalBtnCost = document.querySelector(".cost__modal-btn");
+
+btnCost.onclick = function(){
+    costModal.style.display = "block";
+    bodyLock.classList.add('body__lock');
+}
+
+modalBtnCost.onclick = function(){
+    costModal.style.display = "none";
+    bodyLock.classList.remove('body__lock');
+}
+
+window.onclick = function(event) {
+    if (event.target == costModal) {
+        costModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+    }
+}
+
+// модалка footer cost
+const footerCostModal = document.querySelector(".footer__cost-modal-wrap");
+const btnCostfooter = document.querySelector(".btn__cost2");
+const modalBtnCostFooter = document.querySelector(".footer-cost__modal-btn");
+
+btnCostfooter.onclick = function(){
+    footerCostModal.style.display = "block";
+    bodyLock.classList.add('body__lock');
+}
+
+modalBtnCostFooter.onclick = function(){
+    footerCostModal.style.display = "none";
+    bodyLock.classList.remove('body__lock');
+}
+
+window.onclick = function(event) {
+    if (event.target == footerCostModal) {
+        footerCostModal.style.display = "none";
+        bodyLock.classList.remove('body__lock');
+    }
+}
+
+// модалка footer call
+const footerCallModal = document.querySelector(".footer__call-modal-wrap");
+const btnCallfooter = document.querySelector(".btn__call");
+const modalBtnCallFooter = document.querySelector(".footer-call__modal-btn");
+
+btnCallfooter.onclick = function(){
+    footerCallModal.style.display = "block";
+    bodyLock.classList.add('body__lock');
+}
+
+modalBtnCallFooter.onclick = function(){
+    footerCallModal.style.display = "none";
+    bodyLock.classList.remove('body__lock');
+}
+
+window.onclick = function(event) {
+    if (event.target == footerCallModal) {
+        footerCallModal.style.display = "none";
         bodyLock.classList.remove('body__lock');
     }
 }
@@ -82,19 +148,10 @@ $('.owl-carousel').owlCarousel({
 
 // фиксируем шапку
 // $(window).scroll(function() {
-//     if ($(this).scrollTop() > 1){
+//     if ($(this).scrollTop() > 0){
 //         $('header').addClass("sticky");
 //     }
 //     else{
 //         $('header').removeClass("sticky");
 //     }
-// });
-
-// $(window).scroll(function() {
-//     if ($(this).width() < 1063){
-//         $('header').remove("sticky");
-//     }
-//     // else{
-//     //     $('header').removeClass("sticky");
-//     // }
 // });
